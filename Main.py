@@ -15,3 +15,8 @@ while (interacoes < 7 and sala != 9):
         print('Você está na sala {}.'.format(sala))
         caminho = int(input('[1] - Caminho vermelho\n[2] - Caminho preto\n'))
         sala += caminho
+
+if(sala == 9):
+    print('Parabéns, você venceu a Dungeon!')
+elif(interacoes == 7):
+    print('Sinto muito, você perdeu o jogo :(')
